@@ -3,6 +3,7 @@
 [문제링크](https://neetcode.io/problems/duplicate-integer/question?list=neetcode150)
 
 #### 중복 요소 포함 여부 (Contains Duplicate)
+**난이도 : Easy, 알고리즘 종류: Array, Hash Table, Sorting**
 ```
 문제 설명:
 정수 배열 nums가 주어졌을 때, 배열 안의 어떤 특정한 값이 두 번 이상 나타나면 true를 반환하고, 모든 요소가 서로 다르면 false를 반환하세요.

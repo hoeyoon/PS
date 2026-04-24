@@ -1,5 +1,6 @@
 ## **💻 문제 설명**
 [문제설명](https://neetcode.io/problems/is-anagram/question)
+**난이도 : Easy, 알고리즘 종류: Hash Table, String, Sorting**
 ```
 유효한 애너그램 (Valid Anagram)
 문제 설명:
