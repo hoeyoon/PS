@@ -51,9 +51,10 @@ public:
     }
 };
 ```
-**시간복잡도:** $$O(n^2)$$
+$$시간복잡도: O(n^2)$$
+$$공간복잡도: O(1)$$
 
-#### 나중풀이
+#### 정렬 풀이
 ```c++
 class Solution {
 public:
@@ -69,8 +70,34 @@ public:
     }
 };
 ```
-**시간복잡도:** $$O(n)$$
+$$시간복잡도: O(n log n)$$
+$$공간복잡도: O(1)$$
+
+#### 해쉬 셋(Hash Set) 풀이
+```c++
+class Solution {
+public:
+    bool hasDuplicate(vector<int>& nums) {
+        unordered_set<int> seen;
+        for (int num : nums) {
+            if (seen.count(num)) {
+                return true;
+            }
+            seen.insert(num);
+        }
+        return false;
+    }
+};
+```
+```plaintext
+중복을 허용하지않는 set생성
+만약 seen에 num이 존재하면 true
+seen에 num 추가
+반목문이 끝나면 false 리턴
+```
+$$시간복잡도: O(n)$$
+$$공간복잡도: O(n)$$
 
 ## **💭 오늘의 회고**
 
-반복문을 두번 사용하여 풀었는데 시간복잡도가 O(n^2)이 나와 큰 값이 들어오면 Time Limit 에러가 나왔다 그래서 오름차순 정렬하고 앞의 값과 뒤의 값을 비교하여 풀었다. 시간복잡도가 O(n)이 나왔고 문제를 해결하였다. 문제를 풀 때 시간복잡도를 꼭 생각하고 풀어보자
+반복문을 두번 사용하여 풀었는데 시간복잡도가 O(n^2)이 나와 큰 값이 들어오면 Time Limit 에러가 나왔다 그래서 오름차순 정렬하고 앞의 값과 뒤의 값을 비교하여 풀었다. 시간복잡도가 O(n logn)이 나왔고 문제를 해결하였다. 문제를 풀 때 시간복잡도를 꼭 생각하고 풀어보자

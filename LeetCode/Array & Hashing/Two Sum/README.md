@@ -1,7 +1,9 @@
 ## **💻 문제 설명**
 [문제링크](https://neetcode.io/problems/two-integer-sum/question?list=neetcode150)
+
+#### 두 수의 합 (Two Sum)
+**난이도 : Easy, 알고리즘 종류: Array, Hash Table**
 ```
-두 수의 합 (Two Sum)
 문제 설명:
 정수 배열 nums와 정수 target이 주어졌을 때, nums[i] + nums[j] == target을 만족하는 두 인덱스 i와 j를 반환하세요. (단, i != j여야 합니다.)
 
@@ -62,7 +64,8 @@ public:
     }
 };
 ```
-시간복잡도: $$O(n^2)$$
+$$시간복잡도: O(n^2)$$
+$$공간복잡도: O(1)$$
 #### 정렬 풀이
 ```c++
 class Solution {
@@ -98,7 +101,8 @@ A 정렬 후 정수 i = 0, j = nums.size() - 1로 초기화
 {두 인덱스를 비교하여 작은 값, 두 인덱스를 비교하여 큰 값} 리턴
 ```
 
-시간복잡도: $$O(n log n)$$
+$$시간복잡도: O(n log n)$$
+$$공간복잡도: O(n)$$
 
 #### 해쉬 맵 풀이(Two Pass)
 ```c++
@@ -127,7 +131,8 @@ public:
 target - nums[i]의 값이 indices에 존재하는지 확인(자기 자신을 두 번 사용하는 거 방지)
 존재하면 {i, 찾은 인덱스} 리턴
 ```
-시간복잡도: $$O(n)$$
+$$시간복잡도: O(n)$$
+$$공간복잡도: O(n)$$
 
 #### 해시 맵 풀이(One Pass)
 ```c++
@@ -153,6 +158,8 @@ prevMap 생성
 target - nums[i]가 prevMap에 존재하면 {prevMap[diff], i} 리턴
 없다면 prevMap에 {nums[i], i} 리턴
 ```
-시간복잡도: $$O(n)$$
+$$시간복잡도: O(n)$$
+$$공간복잡도: O(n)$$
+
 ## **💭 오늘의 회고**   
 나는 반복문을 두 번 사용하여 문제를 해결하였는데 솔루션을 보니 해시 맵 사용하면 시간복잡도 O(n)으로 해결할수 있다는 것을 알게 되었다. 해시 맵에 대해서 좀 더 공부해보자.
