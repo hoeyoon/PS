@@ -2,6 +2,7 @@
 [문제링크](https://neetcode.io/problems/buy-and-sell-crypto/question?list=neetcode150)
 
 ### 주식을 사고팔기 가장 좋은 시기 (Best Time to Buy and Sell Stock)
+**난이도 : Easy, 알고리즘 종류: Array, DP**
 
 $i$번째 날의 NeetCoin 가격인 `prices[i]`가 포함된 정수 배열 `prices`가 주어집니다.
 
