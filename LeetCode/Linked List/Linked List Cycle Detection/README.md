@@ -87,7 +87,7 @@ $$공간복잡도: O(n)$$
  */
 
 class Solution {
-public:
+    public:
     bool hasCycle(ListNode* head) {
         ListNode* fast = head;
         ListNode* slow = head;
@@ -118,6 +118,8 @@ fast = head
 어느 지점에서든 slow == fast가 성립하면, 순환이 존재하는 것이므로 true를 반환합니다.
 만약 fast가 끝(null 또는 fast.next가 null)에 도달하면, 순환이 존재하지 않는 것이므로 false를 반환합니다.
 ```
+$$시간복잡도: O(n)$$
+$$공간복잡도: O(1)$$
 ## **💭 오늘의 회고**
 set 해시 테이블을 이용하여 문제를 해결하였다.
 set은 중복된 값을 허용하지 않는다.
