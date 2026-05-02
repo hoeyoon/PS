@@ -10,6 +10,7 @@
 이 두 리스트를 하나의 **정렬된** 연결 리스트로 병합하고, 새롭게 정렬된 연결 리스트의 헤드를 반환하세요.
 새 리스트는 `list1`과 `list2`의 노드들을 이어 붙여서 만들어야 합니다.
 
+![](https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/51adfea9-493a-4abb-ece7-fbb359d1c800/public)
 ---
 
 ### 예시 1:
