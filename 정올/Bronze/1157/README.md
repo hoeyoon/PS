@@ -44,7 +44,7 @@ n을 입력받고 n개의 배열을 입력 받은 뒤 버블정렬을 하고 출
 
 
 ### **✏️ 알고리즘 풀이**
-```
+```c++
 #include <iostream>
 using namespace std;
 
